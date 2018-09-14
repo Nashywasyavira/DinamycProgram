@@ -30,12 +30,17 @@ public class Praktikum01 {
         return hasil[n-1];
     }
     
+    private static void tampilHasil(int n, BigInteger hasil) {
+        System.out.println("Bilangan Fibonacci ke-" + n + " : " + hasil);
+    }
+    
     public static void main(String[] args) {
         String identitas = "Nashywa Syavira Nur Arliza / X RPL3 / 30";
         
         tampilJudul(identitas);
         int n = tampilInput();
         BigInteger hasil = fibo(n);
+        tampilHasil(n, hasil);
     }
     
 }
